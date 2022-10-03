@@ -1,4 +1,5 @@
 from flask import Flask
+from backend.testing2.summing import finals
 
 
 
@@ -8,6 +9,10 @@ def create_app():
     @app.route('/')
     def firstEnd():
         return ("Success Worked")
+
+    @app.route('/nums')
+    def stEnd():
+        return finals()
 
     # app.run()
 
