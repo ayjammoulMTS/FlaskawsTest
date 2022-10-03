@@ -1,5 +1,6 @@
 from flask import Flask
 from backend.testing2.summing import finals
+from backend.testing2.summing  import test
 
 
 
@@ -13,6 +14,8 @@ def create_app():
     @app.route('/nums')
     def stEnd():
         return finals()
+
+    app.register_blueprint(test)
 
     # app.run()
 
