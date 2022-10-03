@@ -1,5 +1,5 @@
 from backend.testing1.adding import adding
-from flask import blueprints
+from flask import Blueprint
 
 def finals():
     return adding(4)
