@@ -3,12 +3,14 @@ from flask import Flask
 
 
 def create_app():
-    application = Flask(__name__)
+    app = Flask(__name__)
 
-    @application.route('/')
+    @app.route('/')
     def firstEnd():
         return ("Success Worked")
 
-    return application
+    app.run()
+
+    return app
 
 
