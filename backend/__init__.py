@@ -22,7 +22,7 @@ def create_app():
         return extension()
     
     @app.route('/eth')
-    def FRss():
+    def forreal():
         return eth()
 
     app.register_blueprint(test)
