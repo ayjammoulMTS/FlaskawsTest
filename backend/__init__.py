@@ -1,8 +1,8 @@
 from flask import Flask
-from Backend.testing2.summing import finals
-from Backend.testing1.coins.eth  import eth
-from Backend.testing2.summing  import test
-from Backend.extensions         import extension
+from backend.testing2.summing import finals
+from backend.testing1.coins.eth  import eth
+from backend.testing2.summing  import test
+from backend.extensions         import extension
 
 
 
