@@ -1,6 +1,6 @@
 from flask import Flask
 from backend.testing2.summing import finals
-from backend.Testing1.coins.eth  import eth
+from backend.testing1.coins.eth  import eth
 from backend.testing2.summing  import test
 from backend.extensions         import extension
 
