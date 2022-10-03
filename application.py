@@ -1,12 +1,8 @@
 from flask import Flask
+from applicatio import create_app
 
 
+application = create_app()
+application.run()
 
-def create_app():
-    application = Flask(__name__)
 
-    @application.route('/')
-    def firstEnd():
-        return ("Success Worked")
-
-    return application
