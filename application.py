@@ -9,11 +9,3 @@ if __name__ == "__main__":
 
 else:
     application = create_app()
-# application.run()
-
-
-# application = Flask(__name__)
-
-# @application.route('/')
-# def firstEnd():
-#     return ("Success Worked")

@@ -1,7 +1,9 @@
 from flask import Flask
 from backend.testing2.summing import finals
+from backend.testing1.coins.eth  import eth
 from backend.testing2.summing  import test
 from backend.extensions         import extension
+
 
 
 def create_app():
@@ -18,6 +20,10 @@ def create_app():
     @app.route('/ext')
     def FRss():
         return extension()
+    
+    @app.route('/eth')
+    def FRss():
+        return eth()
 
     app.register_blueprint(test)
 
